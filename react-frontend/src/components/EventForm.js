@@ -8,6 +8,7 @@ import {
 } from 'react-router-dom';
 
 import classes from './EventForm.module.css';
+import { getAuthToken } from '../util/auth';
 
 function EventForm({ method, event }) {
   //Use useActionData ==> If i returned a response in a action
@@ -109,6 +110,7 @@ export const action = async ({ request, params }) => {
     method: method,
     headers: {
       'Content-Type': 'application/json',
+      'Authorization': 'Bearer ' + getAuthToken()
     },
     body: JSON.stringify(eventData),
   });
