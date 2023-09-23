@@ -114,7 +114,7 @@ react-router-auth-demo/
 │   ├── App.js
 │   ├── index.js
 │   ├── ...
-├── server/
+├── backend/
 │   ├── config.js
 │   ├── routes/
 │   ├── ...
@@ -126,7 +126,7 @@ react-router-auth-demo/
 
 - `public/`: Contains the HTML template and other static assets.
 - `src/`: Contains the React components and application logic.
-- `server/`: Contains the Node.js backend code.
+- `backend/`: Contains the Node.js backend code.
 
 ## Technologies Used
 
@@ -135,7 +135,7 @@ react-router-auth-demo/
 - Node.js
 - Express.js
 - JSON Web Tokens (JWT)
-- Axios (for API requests)
+- fetch (for API requests)
 - MongoDB (or your preferred database)
 
 ## Contributing
@@ -151,7 +151,3 @@ Contributions are welcome! If you'd like to contribute to this project, please f
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
-Feel free to replace the placeholder text and URLs with your actual project details and URLs. Make sure to update the README with accurate information and instructions for your specific project.
